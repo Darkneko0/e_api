@@ -5,7 +5,7 @@
   <div>
     <button *ngIf="page > 1" (click)="getPage(page - 1)">Página Anterior</button>
     <button *ngFor="let page of getPageNumbers()" (click)="getPage(page)" [disabled]="page === currentPage">Página {{ page }}</button>
-    <button *ngIf="page < 10" (click)="getPage(page + 1)">Página Siguiente</button>
+    <button *ngIf="page < 42" (click)="getPage(page + 1)">Página Siguiente</button>
     <span>Página Actual: {{ page }}</span>
   </div>
 
